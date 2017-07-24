@@ -16,6 +16,6 @@ app.get('/ping', async (req, res) => {
   res.json({status: 'success'})
 })
 
-app.listen('8080', () => {
-  console.log('server started on 8080')
+app.listen('8000', () => {
+  console.log('server started on 8000')
 })
