@@ -4,6 +4,7 @@ import schema from './schema'
 const cors = require('cors');
 
 const app = express()
+app.use(authMiddleware())
 app.use(
   '/graphql',
   cors(),
