@@ -11,7 +11,7 @@ const queryType = new GraphQLObjectType({
     name: {
       type: GraphQLString,
       resolve: async (_, args) => {
-        return 'John'
+        return 'John!'
       }
     },
   })

@@ -1,10 +1,12 @@
 import express from 'express'
 import graphQLHTTP from 'express-graphql'
 import schema from './schema'
+const cors = require('cors');
 
 const app = express()
 app.use(
   '/graphql',
+  cors(),
   graphQLHTTP({
     graphiql: true,
     pretty: true,
